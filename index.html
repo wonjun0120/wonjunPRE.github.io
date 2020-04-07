@@ -1,1 +1,58 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio|WonJun</title>
+    <script language = "javascript">  //자바스크립트로 작성한 showPopup함수
+        function showPopup(){
+            window.open("popup.html","contect me", "width = 400", "height=300, left=100,top-50")
+        }   //오픈될 파일명, 제목, 추가 설정(스타일)
+    </script>
+  </head>
+  <body>
+    <section>   <!--자기소개, 최상단-->
+        <h1>안녕하세요! 주니어 개발자를 꿈꾸는 최원준입니다!</h1>
+    </section>
+
+    <section>   <!--최근 작업-->
+       <article>
+           <h1>recent work</h1>
+           <article>
+               <header>
+                   <h1>JavaScript - Koans</h1>
+               </header>
+               <section>
+                    <a href="https://github.com/codestates/PRE-JavaScriptKoans">goto Git</a>
+               </section>
+               <footer>
+                <p>
+                    Posted on <time datetime="2020-04-01 18:00">April first</time> by wonjun.
+                </p>
+               </footer>
+           </article>
+           <article>
+            <header>
+                <h1>JavaScript - TestBuilder</h1>
+            </header>
+            <section>
+                 <a href="https://github.com/codestates/PRE-testbuilder">goto Git</a>
+            </section>
+            <footer>
+             <p>
+                 Posted on <time datetime="2020-04-03 18:00">April 3rd</time> by wonjun.
+             </p>
+            </footer>
+        </article>
+       </article>
+    </section>
+
+    <section>
+        <!--개인 블로그-->
+        <button type="button" onclick="location.href = 'https://derojun.tistory.com/'">티스토리 블로그</button>
+        <!--깃허브-->
+        <button type="button" onclick="location.href = 'https://github.com/wonjun0120/'">깃허브</button>
+        <!--이메일-->
+        <button type="button" onclick="showPopup();">contect me!</button>
+    </section>
+
+  </body>
+</html>
