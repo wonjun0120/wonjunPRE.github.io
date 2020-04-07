@@ -1,0 +1,30 @@
+#oneSection1 {
+    margin: 0;
+    padding: .3rem;
+    background-color: white;
+}
+#oneSection2 {
+    margin: 0;
+    padding: .3rem;
+    background-color: #E6E6E6;
+}
+#endSection {
+    margin: 0;
+    padding: .3rem;
+    background-color: black;
+    color: white;
+}
+
+#oneSpanBlock {
+    width: 500px;
+    border: 4px dashed #8181F7;
+    margin: 5pt;
+    padding: .3rem;
+    background-color: #BDBDBD;
+}
+
+#button{
+    color: white;
+    background-color: #8181F7;
+    border-radius: 10px;
+}

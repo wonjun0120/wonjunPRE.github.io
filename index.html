@@ -9,65 +9,81 @@
             window.open("popup.html","contect me", "width = 400", "height=300, left=100,top-50")
         }   //오픈될 파일명, 제목, 추가 설정(스타일)
     </script>
+    <link rel="stylesheet" type="text/css" href="styleSheet.css" />
   </head>
 
   <body>
-    <section>   <!--자기소개, 최상단-->
-        <h1>안녕하세요! 주니어 개발자를 꿈꾸는 최원준입니다!</h1>
+    <section id="endSection">   <!--최상단 메뉴바-->
+        <h1>최원준</h1>
     </section>
 
-    <section>
-        <h1>Language I learned</h1>  
-        <img src="imgs/c.png" alt="C language">
-        <img src="imgs/c++.png" alt="C++">
-        <img src="imgs/java.png" alt="Java">
-        <img src="imgs/html.png" alt="HTML">
-        <img src="imgs/css.png" alt="CSS">
-        <img src="imgs/js.png" alt="JavaScript">
-        <img src="imgs/pythin.jpeg" alt="python">
-    </section>
+    <section>   <!--본문-->
+        <header>
+            <article id="oneSection2">   <!--자기소개, 최상단-->
+                <h1>안녕하세요! 주니어 개발자를 꿈꾸는 최원준입니다!</h1>
+            </article>
+        </header>
+    
+        <article id="oneSection1">
+            <h1>Language I learned</h1>  
+            <section>
+                <img src="imgs/c.png" width="200" alt="C language">
+                <img src="imgs/c++.png" width="200" alt="C++">
+                <img src="imgs/java.png" width="200" alt="Java">
+                <img src="imgs/pythin.jpeg" width="200" alt="python">
+            </section>
+            <section>
+                <img src="imgs/html.png" width="200" alt="HTML">
+                <img src="imgs/css.png" width="200" alt="CSS">
+                <img src="imgs/js.png" width="200" alt="JavaScript">
+            </section>
+        </article>
+    
+        <article id="oneSection2">   <!--최근 작업-->
+            <h1>recent work</h1>
+            <table>
+                <th>
+                    <div id ="oneSpanBlock" onclick="location.href='https://github.com/codestates/PRE-JavaScriptKoans'">
+                        <header>
+                            JavaScript - Koans
+                        </header>
+                        <footer>
+                             <p>
+                                 Posted on <time datetime="2020-04-01 18:00">April first</time> by wonjun.
+                             </p>
+                        </footer>
+                     </div>
+                </th>
+                    
+                <th>
+                    <div id ="oneSpanBlock" onclick="location.href='https://github.com/codestates/PRE-testbuilder'">
+                        <header>
+                            JavaScript - TestBuilder
+                        </header>
+                        <footer>
+                            <p>
+                            Posted on <time datetime="2020-04-03 18:00">April 3rd</time> by wonjun.
+                            </p>
+                        </footer>
+                    </div>
+                </th>
+            </table>
 
-    <section>   <!--최근 작업-->
-       <article>
-           <h1>recent work</h1>
-           <span>
-               <header>
-                   <h1>JavaScript - Koans</h1>
-               </header>
-               <section>
-                    <a href="https://github.com/codestates/PRE-JavaScriptKoans">goto Git</a>
-               </section>
-               <footer>
-                <p>
-                    Posted on <time datetime="2020-04-01 18:00">April first</time> by wonjun.
-                </p>
-               </footer>
-           </span>
-           <span>
-                <header>
-                    <h1>JavaScript - TestBuilder</h1>
-                </header>
-                <section>
-                     <a href="https://github.com/codestates/PRE-testbuilder">goto Git</a>
-                </section>
-                <footer>
-                    <p>
-                    Posted on <time datetime="2020-04-03 18:00">April 3rd</time> by wonjun.
-                    </p>
-                </footer>
-            </span>
-       </article>
+        </article>
+    
+        <footer>    <!--최하단 contect me-->
+            <section id="endSection">
+                <!--개인 블로그-->
+                <button id='button' type="button" onclick="location.href = 'https://derojun.tistory.com/'">티스토리 블로그</button>
+                <!--깃허브-->
+                <button id='button' type="button" onclick="location.href = 'https://github.com/wonjun0120/'">깃허브</button>
+                <!--이메일-->
+                <button id='button' type="button" onclick="showPopup();">contect me!</button>
+            </section>
+        </footer>
+    
     </section>
-
-    <section>
-        <!--개인 블로그-->
-        <button type="button" onclick="location.href = 'https://derojun.tistory.com/'">티스토리 블로그</button>
-        <!--깃허브-->
-        <button type="button" onclick="location.href = 'https://github.com/wonjun0120/'">깃허브</button>
-        <!--이메일-->
-        <button type="button" onclick="showPopup();">contect me!</button>
-    </section>
-
+   
   </body>
 
 </html>
